@@ -1,0 +1,10 @@
+node_modules
+.next
+.vercel
+.impeccable
+.env*
+!.env.example
+*.log
+.DS_Store
+WhatsApp Video Oct 4 2026.mp4
+WhatsApp Video Oct 4 2026 (1).mp4
