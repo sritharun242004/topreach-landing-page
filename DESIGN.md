@@ -23,11 +23,28 @@ The self-hosted Figtree variable font is the sole interface and display family. 
 
 ## Components
 
-- Buttons are rectangular, high-contrast, and have a clear action label plus a directional arrow.
+- Buttons are soft rounded rectangles, high-contrast, and have a clear action label plus a directional arrow.
 - The media section sits on solid black; each video has native controls and a static poster.
 - The six program stages are a ruled list, so they read as one progression.
 - The form uses visible labels, native input semantics, consent, loading and error states.
 - The admin table uses the same paper and ink tokens with horizontal scrolling on narrow screens.
+
+## Corner geometry
+
+The page uses one deliberate soft-edge scale. Keep large full-width color bands visually calm; round the contained surfaces and the bands' exposed outer corners without turning each section into a card.
+
+| Role | Token | Radius | Applied to |
+| --- | --- | --- | --- |
+| Control | `--radius-control` | `12px` | Buttons, navigation action, text inputs |
+| Panel | `--radius-panel` | `18px` | Video frames, form panel, admin table shell |
+| Feature | `--radius-feature` | `24px` | Hero artwork, major full-width color bands |
+| Circle | `--radius-circle` | `50%` | Eagle logo and intentional circular artwork |
+
+The header eagle is displayed inside a black circle with enough inset to keep its wings visible. The favicon uses the same circular treatment with transparent corners. The existing black circular headline artwork remains a circle. Thin list dividers stay straight because they show a progression, not a card grid.
+
+## Copy hierarchy
+
+The hero leads with the existing future-facing promise. “Watch before you register” names the video step directly. “Stop guessing. Start discovering.” introduces the Find Your Skill Framework. Supporting copy explains the practical work before asking for a registration. The shared HTML reference is a copy source, not a visual template. Its five-day income claim conflicts with the current 45-day program goal, so the page keeps the 45-day goal and its outcome qualification.
 
 ## Layout and motion
 

@@ -45,12 +45,12 @@ export default function Home() {
     </section>
 
     <section className="watch-section" id="watch"><div className="wrap watch-grid">
-      <div className="watch-copy"><h2 data-reveal="type"><RevealLine index={0}>Before you register,</RevealLine><RevealLine index={1}>hear the idea.</RevealLine></h2><p>Take a minute to understand how the Find Your Skill program helps you explore, practise, and choose a direction.</p><a className="light-link" href="#register">Ready to join? Register below <span aria-hidden="true">↗</span></a></div>
+      <div className="watch-copy"><h2 data-reveal="type"><RevealLine index={0}>Watch before</RevealLine><RevealLine index={1}>you register.</RevealLine></h2><p>In one minute, see how the Find Your Skill program helps you explore, practise, and choose a direction.</p><a className="light-link" href="#register">Ready to join? Register below <span aria-hidden="true">↗</span></a></div>
       <div className="video-shell" data-reveal="visual"><div className="video-heading"><span>THE PROGRAM, EXPLAINED</span><span>01:03</span></div><video controls playsInline preload="metadata" poster="/media/program-presenter.jpg" aria-label="Top Reach Pro program introduction"><source src="/media/program-intro.mp4" type="video/mp4" />Your browser does not support video.</video><p>Press play to learn how the program works.</p></div>
     </div></section>
 
     <section className="promise-section wrap" id="how-it-works">
-      <div className="promise-heading"><h2><RevealLine index={0}>Not sure where</RevealLine><RevealLine index={1}>to begin? <em>Start here.</em></RevealLine></h2><p>Top Reach Pro helps you explore your strengths, experience different skills, and choose a direction that feels right for your future.</p></div>
+      <div className="promise-heading"><h2><RevealLine index={0}>Stop guessing.</RevealLine><RevealLine index={1}><em>Start discovering.</em></RevealLine></h2><p>The Find Your Skill Framework helps you explore your strengths, try practical digital work, and choose a direction you can build on.</p></div>
       <div className="path-list">{steps.map(([title, description], index) => <div className="path-row" data-reveal="quiet" style={{ '--reveal-delay': `${Math.min(index, 3) * 55}ms` }} key={title}><span className="path-number">{String(index + 1).padStart(2, '0')}</span><h3>{title}</h3><p>{description}</p><span className="path-arrow" aria-hidden="true">↗</span></div>)}</div>
     </section>
 

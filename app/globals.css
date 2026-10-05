@@ -62,3 +62,44 @@ html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!
 .thank-redirect{display:flex;align-items:center;flex-wrap:wrap;gap:8px 24px;margin-top:20px;font-size:14px}
 .thank-redirect p{margin:0}
 @media(max-width:700px){.thank-you{padding:25px 18px;gap:28px}.thank-card{padding-block:12px}.thanks-icon{width:52px;height:52px;font-size:26px;margin-bottom:25px}.thank-card h1{font-size:clamp(2.75rem,11vw,4.8rem)}.thank-card>p:not(.section-index){font-size:17px}.thank-actions{align-items:stretch;flex-direction:column}.thank-actions .button{width:100%}.thank-copy{align-self:start}.thank-message{margin-top:20px}.thank-message p{font-size:16px}}
+
+/* Soft-edge system: controls 12px, panels 18px, feature surfaces 24px. */
+:root{
+  --radius-control:12px;
+  --radius-panel:18px;
+  --radius-feature:24px;
+  --radius-circle:50%;
+}
+
+.header-logo{
+  width:54px;
+  height:54px;
+  flex:none;
+  padding:7px;
+  border-radius:var(--radius-circle);
+  object-fit:contain;
+  background:var(--ink);
+}
+.nav-cta,.button,.registration-form input:not([type=checkbox]),.admin-login input,.admin-tools input{
+  border-radius:var(--radius-control);
+}
+.hero-art,.watch-section,.income-section,.achievements-section,.registration-section{
+  border-radius:var(--radius-feature);
+}
+.video-shell,.story-video,.form-panel,.admin-table-wrap{
+  border-radius:var(--radius-panel);
+}
+.video-shell,.story-video,.admin-table-wrap{overflow:hidden}
+.video-shell video,.story-video video{border-radius:calc(var(--radius-panel) - 6px)}
+.form-panel{overflow:hidden}
+.path-row{border-radius:var(--radius-control)}
+.admin-table-wrap{border:1px solid var(--line);border-top:2px solid var(--ink)}
+.footer{border-radius:var(--radius-feature) var(--radius-feature) 0 0}
+
+@media(max-width:700px){
+  .header-logo{width:46px;height:46px;padding:6px}
+  .hero-art,.watch-section,.income-section,.achievements-section,.registration-section{border-radius:18px}
+  .art-circle{width:62%;left:19%;top:16%}
+  .art-circle span{font-size:clamp(2.6rem,11vw,4.6rem)}
+  .footer{border-radius:18px 18px 0 0}
+}
