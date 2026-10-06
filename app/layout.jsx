@@ -1,6 +1,7 @@
 import '@fontsource-variable/figtree';
 import './globals.css';
 import CustomCursor from './CustomCursor';
+import MetaPixel from './MetaPixel';
 
 const socialTitle = 'Top Reach Pro | Find the right skill for your future';
 const socialDescription = 'Discover the skill that fits you. Build it through real work with Top Reach Pro.';
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
         FORM: An open campaign page with an inline registration form. Seed: user-pinned Claude-inspired direction.
         FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md */}
     {children}
+    <MetaPixel />
     <CustomCursor />
   </body></html>;
 }
