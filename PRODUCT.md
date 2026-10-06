@@ -27,7 +27,7 @@ Visitors watch the program video, review the offer and six program elements, hea
 - The registration form stores four student details and consent time in Neon.
 - A separate, unlinked admin URL with an email and password protects the registration list and CSV export.
 - A thank-you page confirms submission and opens the supplied WhatsApp group invite after eight seconds. The visitor can join immediately, stay on the page, or copy a personalized greeting to paste in the group.
-- The 45-day income statement is presented as a program goal, not a guaranteed outcome. This interpretation needs owner confirmation.
+- The owner supplied a five-day first-income goal. Present it as a goal shaped by the student's work and opportunities, not a guaranteed outcome.
 - The supplied horizontal video is provisionally the program explanation and the vertical video the community voice. Their roles need owner confirmation.
 - The supplied WhatsApp group invite is linked after registration. No public team contact address has been provided.
 - User-supplied accomplishments for the landing page: 5.5M+ views achieved, 1,000+ students trained, 1,000+ pieces of content published, and three consecutive batches.

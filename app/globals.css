@@ -103,3 +103,29 @@ html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!
   .art-circle span{font-size:clamp(2.6rem,11vw,4.6rem)}
   .footer{border-radius:18px 18px 0 0}
 }
+
+/* The offer keeps the established two-column orange composition, with a clear outcome list. */
+.income-section{margin-top:24px}
+.income-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(56px,7vw,120px);align-items:center}
+.offer-label{display:block;margin-bottom:30px;font-size:12px;font-weight:800;letter-spacing:.12em}
+.income-section h2{font-size:clamp(3.6rem,5.3vw,6.2rem)}
+.income-lead{max-width:540px;margin:29px 0 0;font-size:20px;font-weight:600;line-height:1.42;letter-spacing:-.025em}
+.income-main .button{margin-top:33px}
+.income-side h3{margin:0 0 26px;font-size:clamp(1.8rem,2.6vw,2.6rem);line-height:1.1;letter-spacing:-.04em}
+.offer-outcomes{list-style:none;counter-reset:offer-outcome;margin:0;padding:0;border-top:1px solid rgb(21 21 21 / .36)}
+.offer-outcomes li{counter-increment:offer-outcome;display:grid;grid-template-columns:34px 1fr;gap:18px;padding:18px 0;border-bottom:1px solid rgb(21 21 21 / .36);font-size:17px;font-weight:700;line-height:1.35}
+.offer-outcomes li::before{content:counter(offer-outcome,decimal-leading-zero);font-size:11px;line-height:1.8;font-weight:800;letter-spacing:.08em}
+.income-note{max-width:470px;margin:24px 0 0;font-size:13px;line-height:1.5}
+@media(max-width:900px){.income-grid{grid-template-columns:1fr;gap:52px}}
+@media(max-width:700px){
+  .income-section{margin-top:14px}
+  .income-grid{gap:44px}
+  .offer-label{margin-bottom:20px;font-size:10px}
+  .income-section h2{font-size:clamp(2.8rem,11.5vw,5rem)}
+  .income-lead{margin-top:25px;font-size:17px}
+  .income-main .button{margin-top:26px}
+  .income-side{margin-top:0}
+  .income-side h3{font-size:28px;margin-bottom:20px}
+  .offer-outcomes li{grid-template-columns:26px 1fr;gap:12px;padding:15px 0;font-size:16px}
+  .income-note{margin-top:18px}
+}

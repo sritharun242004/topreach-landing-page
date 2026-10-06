@@ -44,7 +44,9 @@ The header eagle is displayed inside a black circle with enough inset to keep it
 
 ## Copy hierarchy
 
-The hero leads with the existing future-facing promise. “Watch before you register” names the video step directly. “Stop guessing. Start discovering.” introduces the Find Your Skill Framework. Supporting copy explains the practical work before asking for a registration. The shared HTML reference is a copy source, not a visual template. Its five-day income claim conflicts with the current 45-day program goal, so the page keeps the 45-day goal and its outcome qualification.
+The hero leads with the existing future-facing promise. “Watch before you register” names the video step directly. The offer pairs the owner-supplied five-day first-income goal with four concrete things students will build, a registration action, and an explicit statement that income is not guaranteed. “Stop guessing. Start discovering.” introduces the Find Your Skill Framework after the form. The shared HTML reference is a copy source, not a visual template.
+
+The landing sequence is hero, video, offer, community voice, registration, framework, achievements, then footer. The framework and achievement sections sit directly after the form as further detail for students who keep reading.
 
 ## Layout and motion
 
