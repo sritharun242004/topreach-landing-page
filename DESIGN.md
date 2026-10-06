@@ -48,6 +48,10 @@ The hero leads with the existing future-facing promise. “Watch before you regi
 
 The landing sequence is hero, video, offer, community voice, registration, framework, achievements, then footer. The framework and achievement sections sit directly after the form as further detail for students who keep reading.
 
+## Registration path
+
+Every main action links to the same registration form. Contextual prompts appear after the community video and after the achievement figures, where a visitor has enough information to decide. The form names the actual action, keeps its four visible labels, states that every detail is required, and explains the WhatsApp group step after submission. The page does not claim immediate admission or guaranteed income.
+
 ## Layout and motion
 
 Desktop sections use asymmetric two-column grids; mobile sections stack in reading order. Major sections have generous vertical space. The scroll layer follows the supplied iFindos reference: Lenis eases desktop wheel scrolling, while touch and reduced-motion users retain native scrolling. One-way IntersectionObserver reveals use a different treatment according to content: the watch, income, and story headlines rise line by line through a text mask; videos come into focus with a small scale change; program steps, achievements, and the form use opacity only. The promise and registration headlines remain immediately readable. The footer wordmark rises letter by letter as the closing gesture. All content is visible without JavaScript, and reduced-motion disables these transitions. Three thin SVG threads begin at the left edge of the viewport, move faintly behind the hero copy, and enter the orange artwork. Each travels left to right on a 12-second loop, offset four seconds from the next. A short invisible pause at each end keeps the repeat seamless. Their dark portions sit on the cream background and their light portions sit inside the orange panel, while the black circle covers the threads at its center. Reduced-motion keeps the threads still.

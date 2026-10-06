@@ -49,8 +49,8 @@ export default function RegistrationForm() {
     <label className="consent"><input type="checkbox" name="consent" required /><span>I agree to Top Reach Pro storing my details to contact me about this program. My information will only be available to the program team.</span></label>
     {message && <p className="form-error" role="alert">{message}</p>}
     <button className="button button-dark form-submit" disabled={status === 'loading'} type="submit">
-      {status === 'loading' ? 'Sending your registration…' : 'Request program access'} <span aria-hidden="true">↗</span>
+      {status === 'loading' ? 'Sending your registration…' : 'Register my interest'} <span aria-hidden="true">↗</span>
     </button>
-    <p className="form-footnote">No payment is collected on this page.</p>
+    <p className="form-footnote">All four details are required. No payment is collected on this page.</p>
   </form>;
 }

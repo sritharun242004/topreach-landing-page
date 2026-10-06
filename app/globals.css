@@ -129,3 +129,16 @@ html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!
   .offer-outcomes li{grid-template-columns:26px 1fr;gap:12px;padding:15px 0;font-size:16px}
   .income-note{margin-top:18px}
 }
+
+/* Conversion prompts appear after proof, while the form explains the next step. */
+.story-cta{margin-top:17px}
+.form-intro{max-width:510px;margin:-11px 0 26px;color:var(--muted);font-size:15px;line-height:1.5}
+.achievements-action{display:flex;align-items:center;justify-content:space-between;gap:30px;padding-top:39px}
+.achievements-action p{max-width:450px;margin:0;font-size:clamp(20px,2vw,27px);font-weight:700;line-height:1.3;letter-spacing:-.03em}
+.achievements-action .button{flex:none}
+@media(max-width:700px){
+  .story-cta{margin-top:12px}
+  .form-intro{font-size:14px;margin:-10px 0 23px}
+  .achievements-action{align-items:flex-start;flex-direction:column;gap:22px;padding-top:33px}
+  .achievements-action .button{width:100%}
+}
