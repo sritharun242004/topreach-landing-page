@@ -150,6 +150,13 @@ html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!
 }
 
 /* Conversion prompts appear after proof, while the form explains the next step. */
+.course-countdown{width:min(100%,390px);margin-top:28px}
+.countdown-label{margin:0 0 11px;color:var(--orange-deep);font-size:10px;font-weight:800;letter-spacing:.12em}
+.countdown-units{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.countdown-unit{display:flex;flex-direction:column;gap:3px;padding:10px 8px;background:var(--paper-2);border-radius:10px;text-align:center}
+.countdown-value{font-size:clamp(20px,2vw,27px);font-weight:800;letter-spacing:-.06em;line-height:1}
+.countdown-name{color:var(--muted);font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.countdown-date{display:block;margin-top:9px;color:var(--muted);font-size:11px;font-weight:600}
 .story-cta{margin-top:17px}
 .form-intro{max-width:510px;margin:-11px 0 26px;color:var(--muted);font-size:15px;line-height:1.5}
 .achievements-action{display:flex;align-items:center;justify-content:space-between;gap:30px;padding-top:39px}
@@ -157,6 +164,11 @@ html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!
 .achievements-action .button{flex:none}
 @media(max-width:700px){
   .story-cta{margin-top:12px}
+  .course-countdown{margin-top:24px}
+  .countdown-units{gap:6px}
+  .countdown-unit{padding:10px 4px}
+  .countdown-value{font-size:22px}
+  .countdown-name{font-size:8px}
   .form-intro{font-size:14px;margin:-10px 0 23px}
   .achievements-action{align-items:flex-start;flex-direction:column;gap:22px;padding-top:33px}
   .achievements-action .button{width:100%}
