@@ -7,13 +7,14 @@ const socialTitle = 'Top Reach Pro | Find the right skill for your future';
 const socialDescription = 'Discover the skill that fits you. Build it through real work with Top Reach Pro.';
 
 export const metadata = {
-  metadataBase: new URL('https://topreachpto.vercel.app'),
+  metadataBase: new URL('https://topreachgroups.com'),
+  alternates: { canonical: '/' },
   title: socialTitle,
   description: socialDescription,
   openGraph: {
     title: socialTitle,
     description: socialDescription,
-    url: '/',
+    url: 'https://topreachgroups.com/',
     siteName: 'Top Reach Pro',
     type: 'website',
     locale: 'en_IN',
