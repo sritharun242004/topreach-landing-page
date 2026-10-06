@@ -142,3 +142,9 @@ html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!
   .achievements-action{align-items:flex-start;flex-direction:column;gap:22px;padding-top:33px}
   .achievements-action .button{width:100%}
 }
+
+/* The hero artwork is a desktop composition; smaller screens lead with the message. */
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero-art,.hero-threads{display:none}
+}
