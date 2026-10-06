@@ -27,7 +27,7 @@ export default function Home() {
     <ScrollExperience />
     <header className="site-header wrap">
       <a className="brand" href="#top" aria-label="Top Reach Pro home"><img className="header-logo" src="/media/trp-logo-crop.png" alt="" width="54" height="52" /><span>TOP REACH<br />PRO</span></a>
-      <nav aria-label="Main navigation"><a href="#offer">The offer</a><a href="#story">A real voice</a><a className="nav-cta" href="#register">Register <span aria-hidden="true">↗</span></a></nav>
+      <nav aria-label="Main navigation"><a href="#offer">The offer</a><a href="#story">Real voices</a><a className="nav-cta" href="#register">Register <span aria-hidden="true">↗</span></a></nav>
     </header>
 
     <section className="hero wrap">
@@ -46,7 +46,7 @@ export default function Home() {
 
     <section className="watch-section" id="watch"><div className="wrap watch-grid">
       <div className="watch-copy"><h2 data-reveal="type"><RevealLine index={0}>Before you register,</RevealLine><RevealLine index={1}>see how it works.</RevealLine></h2><p>Watch this one-minute introduction to understand how the Find Your Skill program helps you explore, practise, and choose a direction.</p><a className="light-link" href="#register">Ready to join? Register below <span aria-hidden="true">↗</span></a></div>
-      <div className="video-shell" data-reveal="visual"><div className="video-heading"><span>THE PROGRAM, EXPLAINED</span><span>01:03</span></div><video controls playsInline preload="metadata" poster="/media/program-presenter.jpg" aria-label="Top Reach Pro program introduction"><source src="/media/program-intro.mp4" type="video/mp4" />Your browser does not support video.</video><p>Press play to learn how the program works.</p></div>
+      <div className="video-shell" data-reveal="visual"><div className="video-heading"><span>THE PROGRAM, EXPLAINED</span><span>01:03</span></div><video controls playsInline preload="metadata" poster="/media/program-intro-hd-poster.jpg" aria-label="Top Reach Pro program introduction"><source src="/media/program-intro-hd.mp4" type="video/mp4" />Your browser does not support video.</video><p>Press play to learn how the program works.</p></div>
     </div></section>
 
     <section className="income-section" id="offer"><div className="wrap income-grid">
@@ -54,7 +54,7 @@ export default function Home() {
       <div className="income-side" data-reveal="quiet"><h3>What you’ll build</h3><ol className="offer-outcomes"><li>Discover a skill direction that fits your strengths.</li><li>Build practical skill capability through guided tasks.</li><li>Start working toward your first income.</li><li>Follow a clear career and income roadmap.</li></ol><p className="income-note">The 45-day timeframe is a program goal, not a guaranteed result. Your progress depends on your starting point, effort, and opportunities.</p></div>
     </div></section>
 
-    <section className="story-section wrap" id="story"><div className="story-copy"><h2 data-reveal="type"><RevealLine index={0}>A real voice</RevealLine><RevealLine index={1}>from our</RevealLine><RevealLine index={2}><em>community.</em></RevealLine></h2><p>Watch a member of the Top Reach Pro community share their perspective.</p><a className="text-link story-cta" href="#register">Register your interest <span aria-hidden="true">↗</span></a></div><div className="story-video" data-reveal="visual"><video controls playsInline preload="metadata" poster="/media/student-story-poster-06.jpg" aria-label="Top Reach Pro community video"><source src="/media/student-story-framed.mp4" type="video/mp4" />Your browser does not support video.</video></div></section>
+    <section className="story-section wrap" id="story"><div className="story-copy"><h2 data-reveal="type"><RevealLine index={0}>Real voices</RevealLine><RevealLine index={1}>from our</RevealLine><RevealLine index={2}><em>community.</em></RevealLine></h2><p>Hear students in the Top Reach Pro community share their experiences.</p><a className="text-link story-cta" href="#register">Register your interest <span aria-hidden="true">↗</span></a></div><div className="story-video" data-reveal="visual"><video controls playsInline preload="metadata" poster="/media/community-voices-poster.jpg" aria-label="Top Reach Pro student community video"><source src="/media/community-voices.mp4" type="video/mp4" />Your browser does not support video.</video></div></section>
 
     <section className="registration-section" id="register"><div className="wrap registration-grid"><div className="registration-intro"><h2><RevealLine index={0}>Give your</RevealLine><RevealLine index={1}>future a <em>starting point.</em></RevealLine></h2><p>Share your details and the Top Reach Pro team can contact you about joining the Find Your Skill program.</p><div className="quote-block">“Don’t just learn it.<br />Live it.<br />Skills only count when you use them.”<span>— TOP REACH PRO</span></div></div><div className="form-panel" id="registration-form" data-reveal="quiet"><div className="form-head"><span>REGISTRATION</span><span>TAKES ABOUT A MINUTE</span></div><h3>Register your interest.</h3><p className="form-intro">Add your details below. After registering, you can join the TRP WhatsApp group for program updates.</p><RegistrationForm /></div></div></section>
 
