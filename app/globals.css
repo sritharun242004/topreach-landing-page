@@ -92,6 +92,7 @@ html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!
 .video-shell,.story-video,.admin-table-wrap{overflow:hidden}
 .video-shell video,.story-video video{border-radius:calc(var(--radius-panel) - 6px)}
 .form-panel{overflow:hidden}
+.form-panel{scroll-margin-top:16px}
 .path-row{border-radius:var(--radius-control)}
 .admin-table-wrap{border:1px solid var(--line);border-top:2px solid var(--ink)}
 .footer{border-radius:var(--radius-feature) var(--radius-feature) 0 0}

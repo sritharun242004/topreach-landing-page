@@ -8,6 +8,7 @@ export default function ScrollExperience() {
     const revealTargets = Array.from(document.querySelectorAll('[data-reveal]'));
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     const finePointer = window.matchMedia('(pointer: fine)');
+    const mobileLayout = window.matchMedia('(max-width: 700px)');
 
     if ('IntersectionObserver' in window && !reducedMotion.matches) {
       const observer = new IntersectionObserver((entries) => {
@@ -52,10 +53,19 @@ export default function ScrollExperience() {
     }
 
     function onAnchorClick(event) {
-      if (!lenis || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
       const anchor = event.target instanceof Element ? event.target.closest('a[href^="#"]') : null;
       const hash = anchor?.getAttribute('href');
       if (!hash || hash.length < 2) return;
+      if (hash === '#register' && mobileLayout.matches) {
+        const form = document.getElementById('registration-form');
+        if (!form) return;
+        event.preventDefault();
+        history.pushState(null, '', hash);
+        form.scrollIntoView({ behavior: reducedMotion.matches ? 'instant' : 'smooth', block: 'start' });
+        return;
+      }
+      if (!lenis) return;
       const target = document.getElementById(hash.slice(1));
       if (!target) return;
       event.preventDefault();
@@ -64,16 +74,25 @@ export default function ScrollExperience() {
     }
 
     updateSmoothing();
+    const alignMobileRegistration = () => {
+      if (mobileLayout.matches && window.location.hash === '#register') {
+        document.getElementById('registration-form')?.scrollIntoView({ behavior: 'instant', block: 'start' });
+      }
+    };
+    const initialAlignment = window.requestAnimationFrame(alignMobileRegistration);
     reducedMotion.addEventListener('change', updateSmoothing);
     finePointer.addEventListener('change', updateSmoothing);
+    window.addEventListener('hashchange', alignMobileRegistration);
     document.addEventListener('click', onAnchorClick);
 
     return () => {
       disconnectReveals?.();
       window.cancelAnimationFrame(frame);
+      window.cancelAnimationFrame(initialAlignment);
       lenis?.destroy();
       reducedMotion.removeEventListener('change', updateSmoothing);
       finePointer.removeEventListener('change', updateSmoothing);
+      window.removeEventListener('hashchange', alignMobileRegistration);
       document.removeEventListener('click', onAnchorClick);
     };
   }, []);
