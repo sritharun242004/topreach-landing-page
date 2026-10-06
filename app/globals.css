@@ -53,6 +53,8 @@ html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!
 .thank-card h1{font-size:clamp(3.5rem,8vw,7.5rem);overflow-wrap:anywhere}
 .thank-card>p:not(.section-index){margin-bottom:26px}
 .thank-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px}
+.button-whatsapp{background:#25d366;color:#102218}
+.button-whatsapp:hover{background:#1fbd5b;color:#102218}
 .thank-copy,.thank-redirect button{border:0;border-bottom:1px solid currentColor;background:none;color:var(--ink);padding:12px 0;font-size:14px;font-weight:800;min-height:44px}
 .thank-copy:hover,.thank-redirect button:hover{color:var(--white)}
 .thank-message{max-width:590px;border-top:1px solid rgba(21,21,21,.45);padding-top:18px;margin-top:32px}
@@ -61,6 +63,14 @@ html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!
 .thank-copy-status{font-size:14px;margin:12px 0 0}
 .thank-redirect{display:flex;align-items:center;flex-wrap:wrap;gap:8px 24px;margin-top:20px;font-size:14px}
 .thank-redirect p{margin:0}
+@media(min-width:701px){
+  .thank-card{width:min(100%,1100px);max-width:none;margin-inline:auto;text-align:center}
+  .thanks-icon{margin-inline:auto}
+  .thank-card>p:not(.section-index){max-width:680px;margin-inline:auto}
+  .thank-card .section-index{margin-bottom:25px}
+  .thank-actions,.thank-redirect{justify-content:center}
+  .thank-message{max-width:740px;margin-inline:auto}
+}
 @media(max-width:700px){.thank-you{padding:25px 18px;gap:28px}.thank-card{padding-block:12px}.thanks-icon{width:52px;height:52px;font-size:26px;margin-bottom:25px}.thank-card h1{font-size:clamp(2.75rem,11vw,4.8rem)}.thank-card>p:not(.section-index){font-size:17px}.thank-actions{align-items:stretch;flex-direction:column}.thank-actions .button{width:100%}.thank-copy{align-self:start}.thank-message{margin-top:20px}.thank-message p{font-size:16px}}
 
 /* Soft-edge system: controls 12px, panels 18px, feature surfaces 24px. */

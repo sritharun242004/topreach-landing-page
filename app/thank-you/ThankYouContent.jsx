@@ -57,7 +57,7 @@ export default function ThankYouContent() {
       <h1>You’re registered{name ? ',' : '.'}<br /><em>{name || 'Welcome to TRP.'}</em>{name ? '.' : ''}</h1>
       <p>Your details are with the Top Reach Pro team. Join the WhatsApp group for program updates and the next steps.</p>
       <div className="thank-actions">
-        <a className="button button-dark" href={WHATSAPP_GROUP_URL}>Join the WhatsApp group <span aria-hidden="true">↗</span></a>
+        <a className="button button-whatsapp" href={WHATSAPP_GROUP_URL}>Join the WhatsApp group <span aria-hidden="true">↗</span></a>
         <button className="thank-copy" type="button" onClick={copyGreeting}>Copy welcome message</button>
       </div>
       <div className="thank-message"><span>YOUR INTRODUCTION</span><p>{greeting}</p></div>
